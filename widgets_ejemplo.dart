@@ -2,7 +2,8 @@
 // 5to A
 //tipos de widgets
 
-// 1. StatelessWidget: Es un widget que no tiene estado mutable. Se utiliza para crear interfaces de usuario que no cambian después de ser construidas. Ejemplo:  
+// 1. StatelessWidget: Es un widget que no tiene estado mutable. 
+//Se utiliza para crear interfaces de usuario que no cambian después de ser construidas. 
 
 class MiWidgetSinEstado extends StatelessWidget {
   @override
@@ -11,21 +12,26 @@ class MiWidgetSinEstado extends StatelessWidget {
   }
 }
 
-// 2. StatefulWidget: Es un widget que tiene estado mutable. Se utiliza para crear interfaces de usuario que pueden cambiar dinámicamente en respuesta a eventos o interacciones del usuario. Ejemplo:  
+// 2. StatefulWidget: Es un widget que tiene estado mutable. 
+//Se utiliza para crear interfaces de usuario que pueden cambiar 
+//dinámicamente en respuesta a eventos o interacciones del usuario.  
 
 class MiWidgetConEstado extends StatefulWidget {
   @override
   _MiWidgetConEstadoState createState() => _MiWidgetConEstadoState();
 }
 
-// 3. Text: Es un widget que se utiliza para mostrar texto en la pantalla. Permite personalizar el estilo, tamaño y color del texto. Ejemplo: 
+// 3. Text: Es un widget que se utiliza para mostrar texto en la pantalla. 
+//Permite personalizar el estilo, tamaño y color del texto. 
 
 Text(
   '¡Hola, Flutter!',
   style: TextStyle(fontSize: 24, color: Colors.blue),
 )
 
-// 4. Image: Es un widget que se utiliza para mostrar imágenes en la pantalla. Puede cargar imágenes desde la red, desde archivos locales o desde recursos de la aplicación. Ejemplo: 
+// 4. Image: Es un widget que se utiliza para mostrar imágenes en la pantalla. 
+//Puede cargar imágenes desde la red, desde archivos locales o desde 
+//recursos de la aplicación. 
 
 Image.network(
   'https://example.com/imagen.jpg',
@@ -33,7 +39,8 @@ Image.network(
   height: 200,
 )
 
-// 5. Button: Es un widget que se utiliza para crear botones interactivos. Permite definir una función que se ejecutará cuando el botón sea presionado. Ejemplo:  
+// 5. Button: Es un widget que se utiliza para crear botones interactivos. 
+//Permite definir una función que se ejecutará cuando el botón sea presionado.  
 
 ElevatedButton(
   onPressed: () {
@@ -42,7 +49,8 @@ ElevatedButton(
   child: Text('Presióname'),
 )
 
-// 6. Card: Es un widget que se utiliza para crear tarjetas con contenido estructurado. Permite agregar sombra, bordes redondeados y otros estilos para resaltar el contenido. Ejemplo: 
+// 6. Card: Es un widget que se utiliza para crear tarjetas con contenido estructurado. 
+//Permite agregar sombra, bordes redondeados y otros estilos para resaltar el contenido. 
 
 Card(
   elevation: 4, // Sombra de la tarjeta
@@ -50,7 +58,8 @@ Card(
   child: Padding(
     padding: EdgeInsets.all(16), // Espaciado interno de la tarjeta
 
- // 7. ListView: Es un widget que se utiliza para crear listas desplazables de elementos. Permite mostrar una gran cantidad de datos de manera eficiente. Ejemplo: 
+ // 7. ListView: Es un widget que se utiliza para crear listas desplazables de elementos.
+ // Permite mostrar una gran cantidad de datos de manera eficiente. 
 
 ListView(
   children: [
@@ -75,7 +84,8 @@ ListView(
     // Agrega más ListTile según sea necesario
   ],
 
-  // 8. Container: Es un widget que se utiliza para crear un contenedor con propiedades de diseño personalizables, como color, tamaño, bordes y sombras. Ejemplo: 
+  // 8. Container: Es un widget que se utiliza para crear un contenedor con 
+  //propiedades de diseño personalizables, como color, tamaño, bordes y sombras. 
 
 Container(
   width: 200,
@@ -92,7 +102,8 @@ Container(
     ],
   ),
 
-  // 9. Scaffold: Es un widget que proporciona una estructura básica para la aplicación, incluyendo una barra de aplicaciones, un cuerpo y un cajón de navegación. Ejemplo: 
+  // 9. Scaffold: Es un widget que proporciona una estructura básica para la aplicación, 
+  //incluyendo una barra de aplicaciones, un cuerpo y un cajón de navegación.  
 
 Scaffold(
   appBar: AppBar(
@@ -126,7 +137,9 @@ Scaffold(
     ),
   ),
 
-  // 10. Icon: Es un widget que se utiliza para mostrar iconos en la pantalla. Flutter proporciona una amplia variedad de iconos predefinidos a través de la clase Icons. Ejemplo:
+  // 10. Icon: Es un widget que se utiliza para mostrar iconos en la pantalla. 
+  //Flutter proporciona una amplia variedad de iconos predefinidos a través 
+  //de la clase Icons. 
 
 Icon(
   Icons.favorite,
@@ -134,7 +147,9 @@ Icon(
   size: 48,
 )
 
-// 11. TextField: Es un widget que se utiliza para crear campos de texto donde los usuarios pueden ingresar información. Permite personalizar el estilo, el tipo de teclado y la validación de entrada. Ejemplo:  
+// 11. TextField: Es un widget que se utiliza para crear campos de texto donde 
+//los usuarios pueden ingresar información. Permite personalizar el estilo, 
+//el tipo de teclado y la validación de entrada. 
 
 TextField(
   decoration: InputDecoration(
@@ -146,7 +161,9 @@ TextField(
   },
 )
 
-// 12. AppBar: Es un widget que se utiliza para crear una barra de aplicaciones en la parte superior de la pantalla. Permite agregar un título, acciones y un botón de navegación. Ejemplo: 
+// 12. AppBar: Es un widget que se utiliza para crear una barra de aplicaciones 
+//en la parte superior de la pantalla. Permite agregar un título, acciones y un 
+//botón de navegación. 
 
 AppBar(
   title: Text('Mi Aplicación'),
@@ -161,7 +178,9 @@ AppBar(
   ],
 )
 
-// 13. BottomNavigationBar: Es un widget que se utiliza para crear una barra de navegación en la parte inferior de la pantalla. Permite agregar elementos de navegación y manejar la selección de cada elemento. Ejemplo: 
+// 13. BottomNavigationBar: Es un widget que se utiliza para crear una barra de 
+//navegación en la parte inferior de la pantalla. Permite agregar elementos de 
+//navegación y manejar la selección de cada elemento. 
 
 BottomNavigationBar(
   items: [
@@ -175,7 +194,9 @@ BottomNavigationBar(
   },
 )
 
-// 14. FloatingActionButton: Es un widget que se utiliza para crear un botón de acción flotante, que generalmente se utiliza para acciones principales en la aplicación. Ejemplo: 
+// 14. FloatingActionButton: Es un widget que se utiliza para crear un botón 
+//de acción flotante, que generalmente se utiliza para acciones principales 
+//en la aplicación. 
 
 FloatingActionButton(
   onPressed: () {
@@ -185,7 +206,8 @@ FloatingActionButton(
   backgroundColor: Colors.blue,
 )
 
-// 15. Column: Es un widget que se utiliza para organizar otros widgets en una columna vertical. Permite alinear y distribuir los widgets de manera flexible. Ejemplo:  
+// 15. Column: Es un widget que se utiliza para organizar otros widgets en una 
+//columna vertical. Permite alinear y distribuir los widgets de manera flexible. 
 
 Column(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -196,7 +218,8 @@ Column(
   ],
 )
 
-// 16. Row: Es un widget que se utiliza para organizar otros widgets en una fila horizontal. Permite alinear y distribuir los widgets de manera flexible. Ejemplo:
+// 16. Row: Es un widget que se utiliza para organizar otros widgets en una fila 
+//horizontal. Permite alinear y distribuir los widgets de manera flexible. 
 
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -208,8 +231,9 @@ Row(
     Text('Elemento C'),
   ],
 
-  // 17. GridView: Es un widget que se utiliza para crear una cuadrícula de elementos. Permite organizar los widgets en filas y columnas, y es útil para mostrar una gran cantidad de elementos de manera eficiente. Ejemplo: 
-
+  // 17. GridView: Es un widget que se utiliza para crear una cuadrícula de elementos. 
+  //Permite organizar los widgets en filas y columnas, y es útil para mostrar una gran 
+  //cantidad de elementos de manera eficiente. 
   GridView.count(
     crossAxisCount: 2,
     children: [
@@ -221,7 +245,8 @@ Row(
   ),
 )
 
-// 18. PageView: Es un widget que se utiliza para crear una vista de páginas desplazables. Permite mostrar diferentes páginas de contenido que el usuario puede deslizar horizontalmente. Ejemplo:  
+// 18. PageView: Es un widget que se utiliza para crear una vista de páginas desplazables. 
+//Permite mostrar diferentes páginas de contenido que el usuario puede deslizar horizontalmente. 
 
 PageView(
   children: [
@@ -235,7 +260,9 @@ PageView(
 
 
 
-// 19. Drawer: Es un widget que se utiliza para crear un cajón de navegación lateral. Permite agregar elementos de navegación y mostrar contenido adicional cuando el usuario desliza desde el borde de la pantalla o toca un botón de menú. Ejemplo: 
+// 19. Drawer: Es un widget que se utiliza para crear un cajón de navegación lateral. 
+//Permite agregar elementos de navegación y mostrar contenido adicional cuando el 
+//usuario desliza desde el borde de la pantalla o toca un botón de menú. 
 
 Drawer(
   child: ListView(
@@ -261,7 +288,9 @@ Drawer(
     ],
   ),
 
-// 20. ListTile: Es un widget que se utiliza para crear elementos de lista con un diseño predefinido. Permite agregar un icono, un título, un subtítulo y una acción al tocar el elemento. Ejemplo: 
+// 20. ListTile: Es un widget que se utiliza para crear elementos de lista con un diseño 
+//predefinido. Permite agregar un icono, un título, un subtítulo y una acción al tocar 
+//el elemento. 
 
 ListTile(
   leading: Icon(Icons.person),
@@ -271,6 +300,6 @@ ListTile(
   onTap: () {
 
     print('Tocaste al usuario 1');
-  },
+  }
 
-  
+  // Agrega más ListTile según sea necesario
